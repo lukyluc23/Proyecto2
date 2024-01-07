@@ -298,16 +298,8 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    background-repeat: no-repeat;
-    background-image:
-        url("../img/bg1.png"),
-        url("../img/bg2.png");
-    background-size:
-        200px,
-        400px;
-    background-position:
-        100px center,
-        1150px 100px;
+    
+
 }
 
 .reservation__heading {
