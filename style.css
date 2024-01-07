@@ -24,7 +24,6 @@
 }
 
 .hero__main {
-    margin-top: 9rem;
     margin-left: 5rem;
     display: flex;
     padding-inline: 6rem;
@@ -233,6 +232,13 @@
 .card img {
     max-width: 100%;
 }
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 
 .about {
     padding: 6rem;
@@ -312,6 +318,7 @@
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 .reservation__heading h4 {
@@ -320,6 +327,7 @@
 }
 
 .reservation__form {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -367,6 +375,12 @@
     color: white;
     border-radius: 2px;
     cursor: pointer;
+}
+.reservation__form .button:hover{
+    background-color: white;
+    color: #b81717;
+    transition: .2s;
+    border: solid 1px black;
 }
 
 
@@ -458,29 +472,24 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
-
-    .hero__header {
-        flex-direction: column;
-        gap: 2rem;
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto; 
+        background-size: cover;
+        background-position: center;
     }
 
-    .header__right {
-        align-items: flex-start;
+    .cards{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
-
-    .hero__img {
-        padding-top: 0;
-    }
-
-    .hero__img img {
-        max-width: 100%;
-    }
-
-    .hero__main {
-        padding-inline: 2rem;
-        padding-top: 3rem;
-    }
-
     .grid {
         display: flex;
         flex-direction: column;
@@ -560,10 +569,51 @@ footer i {
 }
 
 @media screen and (max-width: 480px) {
+    .hero{
+        display:none;
+        /* justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto; 
+        background-size: cover;
+        background-position: center; */
+        
+    }
 
     .hero__main {
         flex-direction: column;
+        width: 100%;
+        height: auto;
+      
+       
     }
+
+    .hero__sale{
+      display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .reservation{
+        gap: 20px;
+
+    }
+   
 }
 
 
